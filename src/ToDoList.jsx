@@ -1,7 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 function ToDoList() {
-  const [tasks, setTasks] = useState(["Made by Ubaid Ullah"]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
   const [newTask, setNewTask] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   function handleInputChange(event) {
     setNewTask(event.target.value);
