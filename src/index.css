@@ -1,6 +1,7 @@
 body {
   background-color: hsl(0, 0%, 10%);
 }
+
 .to-do-list {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -24,10 +25,11 @@ button {
 }
 
 .add-button {
-  background-color: hsl(125, 47%, 54%);
+  background-color: hsl(234, 100%, 60%);
+  margin-left: 5px;
 }
 .add-button:hover {
-  background-color: hsl(125, 47%, 44%);
+  background-color: hsla(234, 100%, 45%);
 }
 
 .delete-button {
@@ -49,7 +51,7 @@ input[type="text"] {
   padding: 10px;
   border: 2px solid hsla(0, 0%, 80%, 0.5);
   border-radius: 5px;
-  color: hsla(0, 0%, 50%, 0.5);
+  color: rgb(66, 66, 66);
 }
 
 ol {
